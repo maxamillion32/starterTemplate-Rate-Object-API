@@ -1,5 +1,5 @@
 # starterTemplate-Rate-Object-API
-a starter template for rating a custom object using the Stamplay Rest API
+a Javascript starter template for rating a custom object using the Stamplay Rest API
 
 **NOTE: Users must be logged in to use the rating function!**
 

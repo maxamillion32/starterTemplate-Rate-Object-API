@@ -12,7 +12,7 @@ a starter template for rating a custom object using the Stamplay Rest API
 
 3) **Establish object to be rated**
 - Go to your Stamplay editor and go to the **Data** section. Then go to **Objects**
-- Establish what object in the collection your going to rate by getting it's **object Id**.
+- Establish which object in the collection your going to rate by getting it's **object Id**.
 
 4) **Rate Object**
 ```

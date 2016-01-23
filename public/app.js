@@ -1,24 +1,24 @@
-
+  
 function rateFive(){
 
     var data = JSON.stringify({
         "rate": 5
     });
 
-    var xhr = new XMLHttpRequest();
-    xhr.withCredentials = true;
+    var proj = new XMLHttpRequest();
+    proj.withCredentials = true;
 
-    xhr.addEventListener("readystatechange", function () {
+    proj.addEventListener("readystatechange", function () {
         if (this.readyState === this.DONE) {
             console.log(this.responseText);
         }
     });
 
-    xhr.open("PUT", "https://[yourAppId].stamplayapp.com/api/cobject/v1/cobjectId/:id/rate");
-    xhr.setRequestHeader("accept", "application/json");
-    xhr.setRequestHeader("content-type", "application/json");
+    proj.open("PUT", "https://miiartist.stamplayapp.com/api/cobject/v1/project/5693c01d76fdc12145c041cf/rate");
+    proj.setRequestHeader("accept", "application/json");
+    proj.setRequestHeader("content-type", "application/json");
 
-    xhr.send(data);
+    proj.send(data);
 }
 
 function upvote(){
@@ -26,19 +26,19 @@ function upvote(){
         "type": "upvote"
     });
 
-    var xhr = new XMLHttpRequest();
-    xhr.withCredentials = true;
+    var proj = new XMLHttpRequest();
+    proj.withCredentials = true;
 
-    xhr.addEventListener("readystatechange", function () {
+    proj.addEventListener("readystatechange", function () {
         if (this.readyState === this.DONE) {
             console.log(this.responseText);
         }
     });
 
-    xhr.open("PUT", "https://[yourAppId].stamplayapp.com/api/cobject/v1/:cobjectId/:id/vote");
-    xhr.setRequestHeader("accept", "application/json");
-    xhr.setRequestHeader("content-type", "application/json");
-    xhr.send(data);
+    proj.open("PUT", "https://miiartist.stamplayapp.com/api/cobject/v1/project/5693c01d76fdc12145c041cf/vote");
+    proj.setRequestHeader("accept", "application/json");
+    proj.setRequestHeader("content-type", "application/json");
+    proj.send(data);
 }
 
 function downvote(){
@@ -46,19 +46,19 @@ function downvote(){
         "type": "downvote"
     });
 
-    var xhr = new XMLHttpRequest();
-    xhr.withCredentials = true;
+    var proj = new XMLHttpRequest();
+    proj.withCredentials = true;
 
-    xhr.addEventListener("readystatechange", function () {
+    proj.addEventListener("readystatechange", function () {
         if (this.readyState === this.DONE) {
             console.log(this.responseText);
         }
     });
 
-    xhr.open("PUT", "https://[yourAppId].stamplayapp.com/api/cobject/v1/:cobjectId/:id/vote");
-    xhr.setRequestHeader("accept", "application/json");
-    xhr.setRequestHeader("content-type", "application/json");
-    xhr.send(data);
+    proj.open("PUT", "https://miiartist.stamplayapp.com/api/cobject/v1/project/5693c01d76fdc12145c041cf/vote");
+    proj.setRequestHeader("accept", "application/json");
+    proj.setRequestHeader("content-type", "application/json");
+    proj.send(data);
 }
 
 function createObjectComment(){
@@ -69,17 +69,17 @@ function createObjectComment(){
         "text": comment
     });
 
-    var xhr = new XMLHttpRequest();
-    xhr.withCredentials = true;
+    var proj = new XMLHttpRequest();
+    proj.withCredentials = true;
 
-    xhr.addEventListener("readystatechange", function () {
+    proj.addEventListener("readystatechange", function () {
         if (this.readyState === this.DONE) {
             console.log(this.responseText);
         }
     });
 
-    xhr.open("PUT", "https://[yourappid].stamplayapp.com/api/cobject/v1/:cobjectId/:id/comment");
-    xhr.setRequestHeader("accept", "application/json");
-    xhr.setRequestHeader("content-type", "application/json");
-    xhr.send(data);
+    proj.open("PUT", "https://miiartist.stamplayapp.com/api/cobject/v1/project/5693c01d76fdc12145c041cf/comment");
+    proj.setRequestHeader("accept", "application/json");
+    proj.setRequestHeader("content-type", "application/json");
+    proj.send(data);
 }
